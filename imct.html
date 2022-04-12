@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+		<title>Calculo IMC</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<meta charset="utf-08">
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1>Luis e Luan</h1>
+				<h1 class="titulo"></h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2 style="background-color: white; border: solid 2px black;">Pacientes</h2>
+				<h3 style="text-align: center;font-size: 42px;"> Adicione os Pacientes Para o dia De Hoje</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Peso(kg)</th>
+							<th>Altura(m)</th>
+							<th>Gordura Corporal(%)</th>
+							<th>IMC</th>
+							<th>Classificacao</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-pacientes">
+						<tr class="paciente" id="primeiro-paciente">
+						<td class="info-nome">Paulo</td>
+
+						<td class="info-peso">100</td>
+
+						<td class="info-altura">2.00</td>
+
+						<td class="info-gordura">10</td>
+
+						<td class="info-imc">0</td>
+
+						<td class="info-class"></td>
+					</tr>
+					<tr class="paciente">
+
+						<td class="info-nome">Erica</td>
+
+						<td class="info-peso">54</td>
+
+						<td class="info-altura">1.64</td>
+
+						<td class="info-gordura">14</td>
+
+						<td class="info-imc">0</td>
+
+						<td class="info-class"></td>
+
+					</tr>
+					<tr class="paciente" >
+
+						<td class="info-nome">João</td>
+
+						<td class="info-peso">80</td>
+
+						<td class="info-altura">1.72</td>
+
+						<td class="info-gordura">40</td>
+
+						<td class="info-imc">0</td>
+
+						<td class="info-class"></td>
+
+					</tr><tr class="paciente">
+
+						<td class="info-nome">Douglas</td>
+
+						<td class="info-peso">60</td>
+
+						<td class="info-altura">1.73</td>
+
+						<td class="info-gordura">24</td>
+
+						<td class="info-imc">0</td>
+
+						<td class="info-class"></td>
+
+					</tr>
+					<tr class="paciente">
+
+						<td class="info-nome">Tatiana</td>
+
+						<td class="info-peso">46</td>
+
+						<td class="info-altura">1.55</td>
+
+						<td class="info-gordura">19</td>
+
+						<td class="info-imc">0</td>
+
+						<td class="info-class"></td>
+
+					</tr>
+					</tbody>
+				</table>
+
+			</section>
+		</main>
+		<div class="addpt" >
+		<section class="container">
+				<h2 id=titulo-form style="background-color: white; border: solid 2px rgb(37, 36, 36); margin-top: 20px;">Adiciornar paciente</h2>
+				<span id="mensagem-erro"></span>
+				<form id="form-adiciona">
+						<div class="">
+							<label for="nome">Nome:</label>
+							<input id="nome" name="nome" type="text" placeholder="digite o nome do paciente" class="campo">
+						</div>
+		
+						<div class="grupo">
+							<label for="peso">Peso:</label>
+							<input id="peso" name="peso" type="text" placeholder="digite o peso do paciente" class="campo campo-medio">
+						</div>
+						<div class="grupo">
+							<label for="altura">Altura:</label>
+							<input id="altura" name="altura" type="text" placeholder="digite a altura do paciente" class="campo campo-medio">
+						</div>
+						<div class="grupo">
+							<label for="gordura">% de Gordura:</label>
+							<input id="gordura" name="gordura" type="text" placeholder="digite a porcentagem de gordura do paciente" class="campo campo-medio">
+						</div>
+
+						<button id="adicionar-paciente" class="botao bto-principal" style="align-items: center;">Adicionar</button>
+
+				</form>
+		</section>
+		</div>
+
+		<script charset="ISO-8859-1" src="js/calcula-imc.js"></script>
+		
+
+	</body>
+</html>
